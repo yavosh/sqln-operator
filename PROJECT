@@ -1,0 +1,6 @@
+domain: narity.com
+layout:
+- go.kubebuilder.io/v3
+projectName: sqln-operator
+repo: github.com/yavosh/sqln-operator
+version: "3"
