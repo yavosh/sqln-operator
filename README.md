@@ -32,6 +32,15 @@ A dummy k8s operator which manages the sqln container. Created for testing the
 operator patter in k8s the sqln container is just an sqlite data with a network (grpc)
 interface.
 
+## Development
+
+To run the operator locally without deploying to k8s, after making changes:
+
+    make manifests
+    make install
+    make run
+
+
 ## K8S Operator resources
 
 - https://book.kubebuilder.io/cronjob-tutorial/cronjob-tutorial.html

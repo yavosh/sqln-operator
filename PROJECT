@@ -3,4 +3,14 @@ layout:
 - go.kubebuilder.io/v3
 projectName: sqln-operator
 repo: github.com/yavosh/sqln-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: narity.com
+  group: db
+  kind: Sqln
+  path: github.com/yavosh/sqln-operator/api/v1
+  version: v1
 version: "3"

@@ -1,0 +1,20 @@
+# permissions for end users to view sqlns.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: sqln-viewer-role
+rules:
+- apiGroups:
+  - db.narity.com
+  resources:
+  - sqlns
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - db.narity.com
+  resources:
+  - sqlns/status
+  verbs:
+  - get

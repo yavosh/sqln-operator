@@ -1,0 +1,6 @@
+apiVersion: db.narity.com/v1
+kind: Sqln
+metadata:
+  name: sqln-sample-a
+spec:
+  instances: 3
